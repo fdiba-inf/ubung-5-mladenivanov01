@@ -15,7 +15,19 @@ public class AscendingSort {
         System.out.println("Enter numbers: ");
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
+
         }
+            for (int index = 1; index < numbers.length; index++) {
+            int element = numbers[index];
+
+            int i;
+            for (i = index; i > 0 && numbers[i - 1] > element; i--) {
+                numbers[i] = numbers[i - 1];
+            }
+
+            numbers[i] = element;
+        }
+      
 
         // Sort numbers in ascending order
 

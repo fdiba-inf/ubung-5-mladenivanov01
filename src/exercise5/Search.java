@@ -1,4 +1,4 @@
-ackage exercise5;
+package exercise5;
 
 import java.util.Scanner;
 
